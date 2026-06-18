@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <meta charset="utf-8">
+    <title>GPS Infection Game</title>
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css">
+
+    <style>
+        #map {
+            height: 100vh;
+            width: 100%;
+        }
+
+        .blue-dot {
+            background: #007bff;
+            border: 2px solid white;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+        }
+
+        .purple-dot {
+            background: purple;
+            border: 2px solid white;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+        }
+
+        .red-dot {
+            background: red;
+            border: 2px solid white;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+<div id="map"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+<script src="{{ url_for('static', filename='map.js') }}"></script>
+
+</body>
+</html>
